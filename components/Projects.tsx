@@ -36,8 +36,7 @@ const projects = [
     githubLink: "https://github.com/FAIZY152/my-app-1",
   },
   {
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsr4JkM-VXyjN7nmj2ObEIu9Gkzs1rQKDxA&s",
+    image: "/aisas.png",
     title: "Ai Saas App",
     description:
       "An AI-powered SaaS app Using open-source APIs like Google Gemini, Pollination AI, and background remover APIs. It includes an AI chatbot, image generation, code generation, automated code review, and background removal for enhanced productivity and creativity.",
@@ -81,7 +80,10 @@ export function Projects() {
               <CardHeader className="p-4">
                 <div className="relative h-48 w-full mb-4 overflow-hidden rounded-lg">
                   <Image
-                    src={project.image || "/placeholder.svg"}
+                    src={
+                      project.image ||
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9F-bf31CHu8DzAkHAa2_ET3pv4UuMKj0A1A&s"
+                    }
                     alt={project.title}
                     fill
                     className="object-cover transition-transform hover:scale-105"
