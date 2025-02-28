@@ -36,7 +36,8 @@ const projects = [
     githubLink: "https://github.com/FAIZY152/my-app-1",
   },
   {
-    image: "/aisas.png",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsr4JkM-VXyjN7nmj2ObEIu9Gkzs1rQKDxA&s",
     title: "Ai Saas App",
     description:
       "An AI-powered SaaS app Using open-source APIs like Google Gemini, Pollination AI, and background remover APIs. It includes an AI chatbot, image generation, code generation, automated code review, and background removal for enhanced productivity and creativity.",
