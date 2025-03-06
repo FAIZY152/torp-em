@@ -44,7 +44,7 @@ const projects = [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
-      "React Hooks",
+      "Prisma",
       "Zustand",
       "OpenAI APIs",
     ],
