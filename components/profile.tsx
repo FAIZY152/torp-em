@@ -83,14 +83,7 @@ export function Profile() {
             title:
               "Full Stack Developer - Intern: Uk Institute of Computer Science",
             description:
-              " My first internship where I gained hands-on experience as a full stack 
-developer. I learned a lot about building scalable web applications, 
-collaborating with teams, and applying modern development practices.
- Worked as a junior Developer on microservices-based projects
- work with TDD approach
- write Test cases for each action
- use Redis for Caching
- Dockerize Each Service make sure its worked on Production.",
+              "My first internship where I gained hands-on experience as a full stack developer. I learned a lot about building scalable web applications, collaborating with teams, and applying modern development practices Worked as a junior Developer on microservices-based projects work with TDD approach write Test cases for each action use Redis for Caching Dockerize Each Service make sure its worked on Production..",
           },
           {
             period: "Parallel Project",
