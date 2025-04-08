@@ -56,7 +56,7 @@ export function Profile() {
             className="bg-cyan-400 hover:bg-cyan-500"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/my-resume.pdf";
+              link.href = "/final-res.pdf";
               link.setAttribute("download", "My_Resume.pdf");
               document.body.appendChild(link);
               link.click();
@@ -81,9 +81,9 @@ export function Profile() {
           {
             period: "Nov - 2024 - March - 2025",
             title:
-              "Full Stack Developer - Inten: Uk Institute of Computer Science",
+              "Full Stack Developer - Intern: Uk Institute of Computer Science",
             description:
-              "My first internship where I gained hands-on experience as a full stack developer. I learned a lot about building scalable web applications, collaborating with teams, and applying modern development practices.",
+              "My first internship where I gained hands-on experience as a full stack developer. I learned a lot about building scalable web applications, collaborating with teams, and applying modern development practices Worked as a junior Developer on microservices-based projects work with TDD approach write Test cases for each action use Redis for Caching Dockerize Each Service make sure its worked on Production..",
           },
           {
             period: "Parallel Project",

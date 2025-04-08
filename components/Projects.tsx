@@ -36,7 +36,7 @@ const projects = [
     githubLink: "https://github.com/FAIZY152/my-app-1",
   },
   {
-    image: "/aisas.png",
+    image: "https://ideausher.com/wp-content/uploads/2023/05/Integrating-AI-with-Existing-SaaS-1024x576.webp",
     title: "Ai Saas App",
     description:
       "An AI-powered SaaS app Using open-source APIs like Google Gemini, Pollination AI, and background remover APIs. It includes an AI chatbot, image generation, code generation, automated code review, and background removal for enhanced productivity and creativity.",
@@ -44,7 +44,7 @@ const projects = [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
-      "React Hooks",
+      "Prisma",
       "Zustand",
       "OpenAI APIs",
     ],
