@@ -7,7 +7,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { FaJs, FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandLaravel } from "react-icons/tb";
+import { TbBrandLaravel, TbBrandPython } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
 import { SiNextdotjs } from "react-icons/si";
@@ -34,7 +34,7 @@ const skillCategories = {
   ],
   "Back-End": [
     { name: "Express", icon: SiExpress },
-    { name: "Python Fast Api ", icon: TbBrandLaravel },
+    { name: "Python Fast Api ", icon: TbBrandPython },
     { name: "Next js", icon: SiNextdotjs },
     { name: "Docker CI/CD AWS (Starter)", icon: VscAzureDevops },
     { name: "SQL & No SQL", icon: FaDatabase },
