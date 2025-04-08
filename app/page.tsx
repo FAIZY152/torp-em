@@ -13,9 +13,9 @@ export default function Home() {
 
   const slides = {
     1: <Profile />,
-    2: <Services />,
+    2: <Skills />,
     3: <Projects />,
-    4: <Skills />,
+    4: <Services /> ,
     5: <Contact />,
   };
 

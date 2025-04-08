@@ -34,7 +34,7 @@ const skillCategories = {
   ],
   "Back-End": [
     { name: "Express", icon: SiExpress },
-    { name: "PHP Laravel(Starter)", icon: TbBrandLaravel },
+    { name: "Python Fast Api ", icon: TbBrandLaravel },
     { name: "Next js", icon: SiNextdotjs },
     { name: "Docker CI/CD AWS (Starter)", icon: VscAzureDevops },
     { name: "SQL & No SQL", icon: FaDatabase },
