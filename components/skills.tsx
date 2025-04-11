@@ -25,7 +25,7 @@ const skillCategories = {
     { name: "CSS", icon: IoLogoCss3 },
     { name: "Bootstrap", icon: FaBootstrap },
     { name: "Tailwind", icon: RiTailwindCssFill },
-    { name: "JS", icon: FaJs },
+    { name: "JavaScript", icon: FaJs },
     { name: "TypeScript", icon: SiTypescript },
     { name: "React", icon: FaReact },
     { name: "Redux toolkit", icon: SiReduxsaga },
@@ -34,9 +34,9 @@ const skillCategories = {
   ],
   "Back-End": [
     { name: "Express", icon: SiExpress },
-    { name: "Python Fast Api ", icon: TbBrandPython },
     { name: "Next js", icon: SiNextdotjs },
-    { name: "Docker CI/CD AWS (Starter)", icon: VscAzureDevops },
+    { name: "Python Fast Api ", icon: TbBrandPython },
+    { name: "Docker (intermediate)", icon: VscAzureDevops },
     { name: "SQL & No SQL", icon: FaDatabase },
   ],
   Other: [

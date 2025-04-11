@@ -28,14 +28,13 @@ export function Profile() {
           Full Stack Developer | MERN & Next.js Specialist
         </h2>
         <p className="mb-6 text-gray-300">
-          Hi, I'm Muhammad Fayaz, a skilled Full Stack Developer with expertise
-          in the MERN stack and Next.js. I specialize in building scalable,
-          high-performance web applications and delivering user-centric
-          solutions. My experience includes working on real-world projects,
-          writing efficient test cases to ensure application quality, and
-          deploying secure, production-ready systems. With a strong foundation
-          in modern development practices, I strive to bridge the gap between
-          functionality and design to create seamless digital experiences.{" "}
+          I'm Muhammad Fayaz, a Full Stack Developer with a focus on the MERN
+          stack and Next.js. I craft scalable, high-performance web applications
+          that prioritize user experience.​ Recently, I've integrated Generative
+          AI into my projects, developing AI-driven chatbots and role-based AI
+          features to enhance user engagement and personalization.​ My approach
+          combines modern development practices with a keen eye for design,
+          ensuring seamless and secure digital experiences.
         </p>
         <div className="mb-6 flex justify-center md:justify-start gap-4">
           <Button variant="outline" size="icon" className="bg-cyan-400">
@@ -66,7 +65,7 @@ export function Profile() {
           </Button>
 
           <a href="mailto:developer15246@gmail.com" target="_blank">
-            <Button variant="outline" className="text-gray-800 mt-1">
+            <Button variant="outline" className="text-gray-800 mt-1 md:mt-0">
               Email me
             </Button>
           </a>
