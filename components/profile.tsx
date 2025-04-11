@@ -56,7 +56,7 @@ export function Profile() {
             className="bg-cyan-400 hover:bg-cyan-500"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/final-res.pdf";
+              link.href = "/resume-f.pdf";
               link.setAttribute("download", "My_Resume.pdf");
               document.body.appendChild(link);
               link.click();
@@ -66,7 +66,7 @@ export function Profile() {
           </Button>
 
           <a href="mailto:developer15246@gmail.com" target="_blank">
-            <Button variant="outline" className="text-gray-800">
+            <Button variant="outline" className="text-gray-800 mt-1">
               Email me
             </Button>
           </a>
