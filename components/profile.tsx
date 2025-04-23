@@ -55,7 +55,7 @@ export function Profile() {
             className="bg-cyan-400 hover:bg-cyan-500"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/resume-f.pdf";
+              link.href = "/resume-n.pdf";
               link.setAttribute("download", "My_Resume.pdf");
               document.body.appendChild(link);
               link.click();
