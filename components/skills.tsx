@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHtml5 } from "react-icons/fa6";
+import { FaHtml5, FaSocks } from "react-icons/fa6";
 import { SiReduxsaga, SiTypescript } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaJs, FaReact } from "react-icons/fa";
@@ -18,6 +18,8 @@ import { FaGithub } from "react-icons/fa";
 import { GrTest } from "react-icons/gr";
 import { SiPostman } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
+import { SiSocketdotio } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
 
 const skillCategories = {
   "Front-End": [
@@ -36,8 +38,11 @@ const skillCategories = {
     { name: "Express", icon: SiExpress },
     { name: "Next js", icon: SiNextdotjs },
     { name: "Python Fast Api ", icon: TbBrandPython },
-    { name: "Docker (intermediate)", icon: VscAzureDevops },
+    { name: "Docker", icon: VscAzureDevops },
     { name: "SQL & No SQL", icon: FaDatabase },
+    { name: "Redis", icon: DiRedis },
+    { name: "PostgreSQL", icon: FaDatabase },
+    { name: "Socket.io", icon: SiSocketdotio },
   ],
   Other: [
     { name: "Figma", icon: IoLogoFigma },
