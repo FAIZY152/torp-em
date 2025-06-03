@@ -78,7 +78,7 @@ export function Profile() {
         <h3 className="text-2xl font-bold mb-4">Work Experience</h3>
         {[
           {
-            period: "Nov - 2024 - March - 2025",
+            period: "Nov - 2022 - March - 2025",
             title:
               "Full Stack Developer - Intern: Uk Institute of Computer Science",
             description:
