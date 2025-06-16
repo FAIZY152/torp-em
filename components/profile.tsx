@@ -25,16 +25,15 @@ export function Profile() {
         </div>
         <h1 className="mb-2 text-4xl font-bold">Muhammad Fayaz</h1>{" "}
         <h2 className="mb-4 text-xl text-cyan-400">
-          Full Stack Developer | MERN & Next.js Specialist
+          Full-Stack MERN & Next.js Developer | React Native | AI Integration in web apps
         </h2>
         <p className="mb-6 text-gray-300">
-          I'm Muhammad Fayaz, a Full Stack Developer with a focus on the MERN
-          stack and Next.js. I craft scalable, high-performance web applications
-          that prioritize user experience.​ Recently, I've integrated Generative
-          AI into my projects, developing AI-driven chatbots and role-based AI
-          features to enhance user engagement and personalization.​ My approach
-          combines modern development practices with a keen eye for design,
-          ensuring seamless and secure digital experiences.
+           I'm a passionate Full-Stack Developer with hands-on experience in building scalable web and mobile applications using the MERN stack, Next.js, and React Native. I have strong knowledge of both SQL and NoSQL databases, real-time tools like Socket.io, Redis, and Kafka, and experience working with Docker, GraphQL, Prisma, and microservices.
+
+During my internship at the UK Institute of IT in Peshawar, I worked on real-world projects, contributed to both monolithic and microservices-based systems, wrote test cases, and integrated OpenAI APIs into full-stack applications. I’ve also built and deployed two major projects: an AI SaaS platform and a FoodPanda clone, both using modern tools and best practices.
+
+I’m always eager to learn, build, and solve problems using clean and efficient code. I’m ready to bring value to any team looking for a dedicated and skilled developer.
+
         </p>
         <div className="mb-6 flex justify-center md:justify-start gap-4">
           <Button variant="outline" size="icon" className="bg-cyan-400">
@@ -55,7 +54,7 @@ export function Profile() {
             className="bg-cyan-400 hover:bg-cyan-500"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/r-resume.pdf";
+              link.href = "/new-res.pdf";
               link.setAttribute("download", "My_Resume.pdf");
               document.body.appendChild(link);
               link.click();
