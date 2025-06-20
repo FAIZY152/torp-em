@@ -32,7 +32,7 @@ const projects = [
       "Restaurant dashboard ",
       "Food panda like features",
     ],
-    liveLink: "https://food-app-production-d663.up.railway.app/",
+    liveLink: "https://food-app-production-2cd7.up.railway.app/",
     githubLink: "https://github.com/FAIZY152/my-app-1",
   },
   {
