@@ -54,7 +54,7 @@ I’m always eager to learn, build, and solve problems using clean and efficient
             className="bg-cyan-400 hover:bg-cyan-500"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/new-res.pdf";
+              link.href = "/resumef.pdf";
               link.setAttribute("download", "My_Resume.pdf");
               document.body.appendChild(link);
               link.click();
