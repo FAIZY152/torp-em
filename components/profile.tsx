@@ -79,7 +79,7 @@ I’m always eager to learn, build, and solve problems using clean and efficient
           {
             period: "jan - 2024 - june - 2024",
             title:
-              "Full Stack Developer - Mentoga",
+              "Full Stack Developer - Remote Internship -  Mentoga ",
             description:
               `Mentoga offer self-paced learning Remote Internship where They provide five tasks for newly graduated fashion design students, each requiring approximately 40 hours of work, with mock data included where necessary. The tasks focus on building practical skills, portfolio development, and industry-relevant experience.
               I build :
