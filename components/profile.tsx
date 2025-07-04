@@ -77,17 +77,32 @@ I’m always eager to learn, build, and solve problems using clean and efficient
         <h3 className="text-2xl font-bold mb-4">Work Experience</h3>
         {[
           {
-            period: "Nov - 2022 - March - 2025",
+            period: "jan - 2024 - june - 2024",
             title:
-              "Full Stack Developer - Intern: Uk Institute of Computer Science",
+              "Full Stack Developer - Mentoga",
             description:
-              "My first internship where I gained hands-on experience as a full stack developer. I learned a lot about building scalable web applications, collaborating with teams, and applying modern development practices Worked as a junior Developer on microservices-based projects work with TDD approach write Test cases for each action use Redis for Caching Dockerize Each Service make sure its worked on Production..",
+              `Mentoga offer self-paced learning Remote Internship where They provide five tasks for newly graduated fashion design students, each requiring approximately 40 hours of work, with mock data included where necessary. The tasks focus on building practical skills, portfolio development, and industry-relevant experience.
+              I build :
+      Build a Blog Platform with Content Management 
+Create an E-Commerce Product Listing Page 
+Develop a Task Management Dashboard with Authentication 
+Create a Weather Forecast Web App`
           },
           {
-            period: "Parallel Project",
-            title: "MERN Stack Developer - Real World Project",
+            period: "",
+            title: "MERN Stack Developer - UK Institute Of Computer Science - SH",
             description:
-              "Worked as a freelancer on microservices-based projects, focusing on building high-scalable applications using TypeScript. Developed robust test cases for every action to ensure reliability and implemented intuitive UI designs with Next.js.",
+              `During my Second internship + job  at the UK Institute of IT in Peshawar, I worked on real-world 
+projects, contributed to both monolithic and microservices-based systems, wrote test cases, 
+and integrated OpenAI APIs into full-stack applications. I’ve also built and deployed two major 
+projects: an AI SaaS platform and a FoodPanda clone, both using modern tools and best 
+practices. 
+Worked as a junior Developer on monolithic and  microservices based projects   
+write Test cases for each action   
+Use  Graph Ql, Open APis , Redis, Kafka  
+Build Full stack apps in Mern sack  
+Dockerize Each Service make sure its worked on Production   
+Integration Each service in React`
           },
         ].map((job, index) => (
           <motion.div
