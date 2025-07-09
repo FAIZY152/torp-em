@@ -77,7 +77,7 @@ I’m always eager to learn, build, and solve problems using clean and efficient
         <h3 className="text-2xl font-bold mb-4">Work Experience</h3>
         {[
           {
-            period: "jan - 2024 - june - 2024",
+            
             title:
               "Full Stack Developer - Remote Internship -  Mentoga ",
             description:
