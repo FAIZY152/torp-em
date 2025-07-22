@@ -1,12 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHtml5, FaSocks } from "react-icons/fa6";
-import { SiReduxsaga, SiTypescript } from "react-icons/si";
+import {
+  FaAws,
+  FaHtml5,
+  FaNodeJs,
+  FaPhp,
+  FaRobot,
+  FaSocks,
+} from "react-icons/fa6";
+import {
+  SiAdobephotoshop,
+  SiAntdesign,
+  SiChainlink,
+  SiGithubactions,
+  SiGraphql,
+  SiMongodb,
+  SiNetlify,
+  SiOpenai,
+  SiPrisma,
+  SiRabbitmq,
+  SiRailway,
+  SiReduxsaga,
+  SiTypeorm,
+  SiTypescript,
+  SiVercel,
+} from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaJs, FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiLockPasswordLine, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandLaravel, TbBrandPython } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
@@ -15,7 +38,7 @@ import { GiReactor } from "react-icons/gi";
 import { FaDocker } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { GrTest } from "react-icons/gr";
+import { GrMysql, GrTest } from "react-icons/gr";
 import { SiPostman } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 import { SiSocketdotio } from "react-icons/si";
@@ -33,7 +56,6 @@ const skillCategories = {
     { name: "Redux Toolkit", icon: SiReduxsaga },
     { name: "Zustand", icon: GiReactor },
     { name: "Next.js", icon: SiNextdotjs },
-    { name: "Material UI", icon: SiMaterialui },
     { name: "Ant Design", icon: SiAntdesign },
   ],
   "Back-End": [
@@ -47,7 +69,6 @@ const skillCategories = {
     { name: "MongoDB", icon: SiMongodb },
     { name: "PostgreSQL", icon: FaDatabase },
     { name: "MySQL", icon: GrMysql },
-    { name: "Firebase", icon: SiFirebase },
     { name: "Redis", icon: DiRedis },
     { name: "RabbitMQ", icon: SiRabbitmq },
     { name: "Prisma ORM", icon: SiPrisma },
@@ -76,7 +97,6 @@ const skillCategories = {
     { name: "Postman", icon: SiPostman },
   ],
 };
-
 
 export function Skills() {
   return (
