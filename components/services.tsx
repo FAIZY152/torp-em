@@ -8,27 +8,28 @@ const services = [
     icon: Code,
     title: "Full Stack Development",
     skills:
-      "MERN Stack, Next.js, TypeScript , SQL & NoSQL , Docker , Git & Git Hub , CI/CD , Testing , Code Review",
+      "MERN Stack, Next.js, TypeScript, GraphQL, Prisma ORM, Docker, CI/CD, Redis, Kafka, JWT, Git & GitHub, Testing (Jest & Vitest), AI Integration (OpenAI, LangChain.js), Microservices, Monolithic Architecture",
   },
   {
     icon: Computer,
     title: "Front End Development",
     skills:
-      "JavaScript, Tailwind, Bootstrap, React.js, Redux, Next.js, Zustand, Zod , Vitest",
+      "JavaScript, React.js, Next.js, TypeScript, Tailwind CSS, Material UI, Ant Design, Zustand, Redux Toolkit, Zod, Responsive Design",
   },
   {
     icon: Webhook,
     title: "Back End Development",
     skills:
-      "Node.js, Express.js, Laravel(Beginer), MongoDB, PostgreSQL, Redis, Socket.io, JWT, Passport.js, Docker CI/CD(Starter)",
+      "Node.js, Express.js, GraphQL, Laravel (Beginner), OpenAI API, MongoDB, PostgreSQL, MySQL, Firebase, Redis, RabbitMQ, Prisma, TypeORM, Socket.io, Passport.js, Docker (Microservices), API Integration",
   },
   {
     icon: Paintbrush,
-    title: "Other",
+    title: "Other Tools & DevOps",
     skills:
-      "Figma, Photoshop , jest , Vercel, Netlify , Postman ,  Git & Git Hub ",
+      "Git & GitHub, Vercel, Railway, Netlify, Postman, Figma, Photoshop, AWS (Beginner), Authentication (Double Auth), Testing (Jest, Vitest), Deployment Automation, Chatbot Integration",
   },
 ];
+
 
 export function Services() {
   return (
