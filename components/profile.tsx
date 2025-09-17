@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export function Profile() {
@@ -35,20 +35,32 @@ During my internship at the UK Institute of IT in Peshawar, I worked on real-wor
 I’m always eager to learn, build, and solve problems using clean and efficient code. I’m ready to bring value to any team looking for a dedicated and skilled developer.
 
         </p>
-        <div className="mb-6 flex justify-center md:justify-start gap-4">
-          <Button variant="outline" size="icon" className="bg-cyan-400">
-            <FaWhatsapp className="h-5 w-5 text-white" />
-          </Button>
+   <div className="mb-6 flex justify-center md:justify-start gap-4">
+  {/* WhatsApp */}
+  <Button variant="outline" size="icon" className="bg-cyan-400">
+    <FaWhatsapp className="h-5 w-5 text-white" />
+  </Button>
 
-          <Link
-            href="https://www.linkedin.com/in/faizy-bangash-6a9852340/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <Button variant="outline" size="icon" className="bg-cyan-400">
-              <FaLinkedin className="h-5 w-5 text-white" />
-            </Button>
-          </Link>
-        </div>
+  {/* LinkedIn */}
+  <Link
+    href="https://www.linkedin.com/in/faizy-bangash-6a9852340/"
+    target="_blank"
+    rel="noopener noreferrer">
+    <Button variant="outline" size="icon" className="bg-cyan-400">
+      <FaLinkedin className="h-5 w-5 text-white" />
+    </Button>
+  </Link>
+
+  {/* GitHub */}
+  <Link
+    href="https://github.com/FAIZY152"
+    target="_blank"
+    rel="noopener noreferrer">
+    <Button variant="outline" size="icon" className="bg-cyan-400">
+      <FaGithub className="h-5 w-5 text-white" />
+    </Button>
+  </Link>
+</div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Button
             className="bg-cyan-400 hover:bg-cyan-500"
