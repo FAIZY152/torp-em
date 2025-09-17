@@ -75,15 +75,6 @@ I’m always eager to learn, build, and solve problems using clean and efficient
             Download CV
           </Button>
 
-          <a 
-  href="mailto:developer15246@gmail.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  <Button variant="outline" className="text-gray-800 mt-1 md:mt-0">
-    Email me
-  </Button>
-</a>
         </div>
       </motion.div>
       <motion.div
