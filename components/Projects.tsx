@@ -29,10 +29,10 @@ const projects = [
     features: [
       "User & Admin authentication",
       "Real-time order tracking",
-      "Restaurant dashboard ",
-      "Food panda like features",
+      "Admin Dashboard",
+      "Food Panda like features",
     ],
-    liveLink: "https://food-app-production-0edf.up.railway.app/",
+    liveLink: "https://food-delivery-app-production-6026.up.railway.app/",
     githubLink: "https://github.com/FAIZY152/my-app-1",
   },
   {
