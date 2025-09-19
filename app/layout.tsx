@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icon: "/profile.jpg",
   },
 };
-
+  
 export default function RootLayout({
   children,
 }: Readonly<{
