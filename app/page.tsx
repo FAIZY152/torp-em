@@ -7,7 +7,6 @@ import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
 import { usePortfolioStore } from "@/store/use-portfolio-store";
 import { Projects } from "@/components/Projects";
-
 export default function Home() {
   const currentSlide = usePortfolioStore((state) => state.currentSlide);
 
@@ -15,7 +14,7 @@ export default function Home() {
     1: <Profile />,
     2: <Skills />,
     3: <Projects />,
-    4: <Services /> ,
+    4: <Services />,
     5: <Contact />,
   };
 
