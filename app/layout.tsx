@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     icon: "/profile.jpg",
   },
 };
-// make-layout
   
 export default function RootLayout({
   children,
