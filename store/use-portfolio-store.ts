@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 
 type Section = 'home' | 'experience' | 'education' | 'skills' | 'contact'
-
+//  PortfolioState updated
 interface PortfolioState {
   currentSection: Section
   setCurrentSection: (section: Section) => void
