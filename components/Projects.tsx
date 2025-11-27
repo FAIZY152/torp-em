@@ -10,7 +10,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
-
+// prevent infinte looping
 const projects = [
   {
     image:
