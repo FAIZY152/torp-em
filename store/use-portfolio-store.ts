@@ -7,7 +7,7 @@ interface PortfolioState {
   currentSlide: number
   setCurrentSlide: (slide: number) => void
 }
-
+// make zustand store
 export const usePortfolioStore = create<PortfolioState>((set) => ({
   currentSection: 'home',
   setCurrentSection: (section) => set({ currentSection: section }),
