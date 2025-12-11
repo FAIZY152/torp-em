@@ -97,7 +97,7 @@ const skillCategories = {
     { name: "Postman", icon: SiPostman },
   ],
 };
-
+// hello bro
 export function Skills() {
   return (
     <div className="grid gap-8 px-4 py-8 md:py-5 bg-gray-900 text-gray-300">
