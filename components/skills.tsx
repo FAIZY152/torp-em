@@ -49,8 +49,6 @@ const skillCategories = {
   "Front-End": [
     { name: "JavaScript", icon: FaJs },
     { name: "TypeScript", icon: SiTypescript },
-    { name: "Python", icon: TbBrandPython },
-    { name: "PHP", icon: FaPhp },
     { name: "React.js", icon: FaReact },
     { name: "Redux Toolkit", icon: SiReduxsaga },
     { name: "Zustand", icon: GiReactor },
