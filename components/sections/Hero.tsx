@@ -102,12 +102,7 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, x: 40 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
-          className="relative mx-auto hidden h-[520px] w-full max-w-[560px] items-center justify-center lg:flex"
-        >
+        <div className="relative mx-auto hidden h-[520px] w-full max-w-[560px] items-center justify-center lg:flex">
           <div className="absolute h-[410px] w-[410px] rounded-full border border-[rgba(201,243,29,0.25)] shadow-[0_0_80px_rgba(201,243,29,0.12)]" />
           <div className="absolute h-[475px] w-[475px] rounded-full border border-[rgba(29,185,84,0.18)]" />
           <div className="relative h-96 w-96 overflow-hidden rounded-full border-4 border-[rgba(201,243,29,0.38)] bg-[#111] shadow-[0_0_60px_rgba(201,243,29,0.18)]">
@@ -122,7 +117,7 @@ export function Hero() {
               className={badgePositions[index]}
             />
           ))}
-        </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

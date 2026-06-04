@@ -1,5 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { SmoothScroll } from "@/components/SmoothScroll";
 import { About } from "@/components/sections/About";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
@@ -9,10 +10,13 @@ import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
 import { Services } from "@/components/sections/Services";
 import { Skills } from "@/components/sections/Skills";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Pricing } from "@/components/sections/Pricing";
 
 export default function Page() {
   return (
     <>
+      <SmoothScroll />
       <Navbar />
       <main className="font-sans">
         <Hero />
@@ -21,6 +25,8 @@ export default function Page() {
         <Experience />
         <Projects />
         <Skills />
+        <Testimonials />
+        <Pricing />
         <Education />
         <Certifications />
         <Contact />

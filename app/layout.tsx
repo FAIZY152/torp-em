@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Premium portfolio for Muhammad Fayaz, a Full-Stack Software Engineer specializing in SaaS, AI integration, cloud deployment, and production-grade web applications.",
   icons: {
-    icon: "/profile-img.jpeg",
+    icon: "/profile-img.jpg",
   },
 };
   

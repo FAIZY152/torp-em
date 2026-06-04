@@ -71,6 +71,18 @@ export function Experience() {
                   <p className="mt-1 font-bold text-[#C9F31D]">
                     {experience.company} · {experience.location}
                   </p>
+                  {experience.highlights ? (
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {experience.highlights.map((highlight) => (
+                        <span
+                          key={highlight}
+                          className="rounded-full border border-[rgba(201,243,29,0.22)] bg-[rgba(201,243,29,0.07)] px-3 py-1 text-xs font-black text-[#C9F31D]"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
                   <ul className="mt-5 space-y-3 text-sm leading-7 text-[#A0A0A0]">
                     {experience.bullets.map((bullet) => (
                       <li key={bullet} className="flex gap-3">
