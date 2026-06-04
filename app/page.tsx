@@ -1,22 +1,31 @@
-"use client";
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { About } from "@/components/sections/About";
+import { Certifications } from "@/components/sections/Certifications";
+import { Contact } from "@/components/sections/Contact";
+import { Education } from "@/components/sections/Education";
+import { Experience } from "@/components/sections/Experience";
+import { Hero } from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
+import { Services } from "@/components/sections/Services";
+import { Skills } from "@/components/sections/Skills";
 
-import { Layout } from "@/components/layout";
-import { Profile } from "@/components/profile";
-import { Services } from "@/components/services";
-import { Skills } from "@/components/skills";
-import { Contact } from "@/components/contact";
-import { usePortfolioStore } from "@/store/use-portfolio-store";
-import { Projects } from "@/components/Projects";
-export default function Home() {
-  const currentSlide = usePortfolioStore((state) => state.currentSlide);
-
-  const slides = {
-    1: <Profile />,
-    2: <Skills />,
-    3: <Projects />,
-    4: <Services />,
-    5: <Contact />,
-  };
-
-  return <Layout>{slides[currentSlide as keyof typeof slides]}</Layout>;
+export default function Page() {
+  return (
+    <>
+      <Navbar />
+      <main className="font-sans">
+        <Hero />
+        <About />
+        <Services />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Certifications />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
 }
