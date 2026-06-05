@@ -38,6 +38,9 @@ import {
   SiVitest,
   SiVuedotjs,
   SiZod,
+  SiFramer,
+  SiAntdesign,
+  SiShadcnui,
 } from "react-icons/si";
 import {
   Activity,
@@ -182,7 +185,7 @@ export const stats: Stat[] = [
   { label: "Years Exp.", value: 4, suffix: "+", icon: BriefcaseBusiness },
   { label: "Delivered Projects", value: 10, suffix: "+", icon: Rocket },
   { label: "Collaborations", value: 15, suffix: "+", icon: Users },
-  { label: "Company SaaS Apps", value: 3, suffix: "+", icon: Workflow },
+  { label: "Company SaaS Apps", value: 5, suffix: "+", icon: Workflow },
 ];
 
 export const advantages = [
@@ -262,10 +265,10 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: "React.js", level: 96, icon: SiReact },
       { name: "Next.js", level: 95, icon: SiNextdotjs },
-      { name: "Vue.js", level: 82, icon: SiVuedotjs },
-      { name: "Tailwind CSS", level: 94 },
-      { name: "shadcn/ui", level: 90 },
-      { name: "Ant Design", level: 84 },
+      { name: "TypeScript", level: 90, icon: SiTypescript },
+      { name: "Nest.js", level: 94, icon: SiNestjs },
+      { name: "AI Agents", level: 70, icon: Bot},
+      { name: "Dev Ops", level: 85, icon: Cloud },
     ],
   },
   {
@@ -331,9 +334,9 @@ export const skillMarqueeRows: SkillMarqueeItem[][] = [
     { name: "CSS3", icon: SiCss3 },
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "Vue.js", icon: SiVuedotjs },
-    { name: "shadcn/ui", short: "UI" },
-    { name: "Ant Design", short: "AD" },
-    { name: "Framer Motion", short: "FM" },
+    { name: "shadcn/ui", short: "UI", icon: SiShadcnui },
+    { name: "Ant Design", short: "AD", icon: SiAntdesign },
+    { name: "Framer Motion", short: "FM", icon: SiFramer },
     { name: "GSAP", short: "GS" },
   ],
   [
@@ -344,7 +347,7 @@ export const skillMarqueeRows: SkillMarqueeItem[][] = [
     { name: "Laravel", icon: SiLaravel },
     { name: "PHP", icon: SiPhp },
     { name: "Python", icon: SiPython },
-    { name: "REST APIs", short: "API" },
+    { name: "REST APIs", short: "API", icon: Code2 },
     { name: "JWT Auth", short: "JWT" },
     { name: "RBAC", short: "RB" },
     { name: "WebSockets", short: "WS" },
