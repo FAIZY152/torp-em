@@ -1,107 +1,57 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Bot, CheckCircle2, Clock3, Github, LockKeyhole, ShieldCheck, Users } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Github, LockKeyhole } from "lucide-react";
 import { architectureHighlights, projects, type Project } from "@/data/portfolio";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 function ProjectPreview({ project }: { project: Project }) {
-  const rows = project.preview.type === "workflow" ? ["Draft", "Sent", "Submitted", "Recorded"] : ["API", "Auth", "Data", "Deploy"];
-  const cards =
-    project.preview.type === "commerce"
-      ? ["Orders", "Menu", "Delivery"]
-      : project.preview.type === "ai"
-        ? ["Chat", "Code", "Image"]
-        : project.preview.type === "legacy"
-          ? ["Goals", "Docs", "Stories"]
-          : ["Team", "Activity", "Reports"];
-
   return (
-    <div className="relative h-64 overflow-hidden border-b border-white/10 bg-[#090B0D] sm:h-72">
+    <div className="relative h-64 overflow-hidden border-b border-white/10 bg-[#090B0D] sm:h-80">
       <div className="absolute inset-0 bg-grid opacity-40" />
       <div
-        className="absolute -right-16 -top-24 h-64 w-64 rounded-full blur-3xl"
+        className="absolute -right-20 -top-28 h-72 w-72 rounded-full blur-3xl"
         style={{ backgroundColor: `${project.preview.accent}26` }}
       />
-      <div className="absolute left-5 top-5 z-20 inline-flex rounded-full border border-white/10 bg-[#0A0A0A]/80 px-3 py-1.5 text-xs font-black text-white backdrop-blur">
-        {project.category}
-      </div>
 
       <motion.div
-        className="absolute left-1/2 top-1/2 w-[92%] max-w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-[1.6rem] border border-white/10 bg-[#111418]/95 p-3 shadow-[0_28px_90px_rgba(0,0,0,0.5)] sm:w-[82%] sm:p-4"
-        whileHover={{ rotateX: 3, rotateY: -5, scale: 1.02 }}
+        className="absolute inset-x-4 bottom-5 top-5 overflow-hidden rounded-[1.7rem] border border-white/10 bg-[#111418] shadow-[0_28px_90px_rgba(0,0,0,0.55)] sm:inset-x-8"
+        whileHover={{ y: -4 }}
         transition={{ type: "spring", stiffness: 170, damping: 18 }}
       >
-        <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-3">
+        <div className="flex items-center justify-between border-b border-white/10 bg-[#0A0A0A]/88 px-4 py-3">
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
             <span className="h-2.5 w-2.5 rounded-full bg-yellow-300" />
             <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
           </div>
-          <span className="rounded-full bg-white/[0.04] px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#8F98A8]">
-            Live build
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[#8F98A8]">
+            <ExternalLink className="h-3 w-3" />
+            Product shot
           </span>
         </div>
 
-        <div className="grid grid-cols-[0.9fr_1.2fr] gap-2 sm:gap-4">
-          <div className="rounded-2xl border border-white/10 bg-[#0A0A0A] p-3 sm:p-4">
-            <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#8F98A8]">{project.preview.eyebrow}</p>
-            <h4 className="mt-2 text-base font-black text-white sm:text-xl">{project.preview.metric}</h4>
-            <div className="mt-4 space-y-2 sm:mt-5">
-              {rows.map((row, index) => (
-                <div key={row} className="flex items-center gap-2 rounded-xl bg-white/[0.04] px-3 py-2">
-                  <span className="grid h-6 w-6 place-items-center rounded-lg" style={{ backgroundColor: `${project.preview.accent}1F` }}>
-                    <CheckCircle2 className="h-3.5 w-3.5" style={{ color: project.preview.accent }} />
-                  </span>
-                  <span className="truncate text-xs font-bold text-[#D8DEE9]">{row}</span>
-                  <span className="ml-auto text-[10px] text-[#697080]">0{index + 1}</span>
-                </div>
-              ))}
+        <div className="relative h-[calc(100%-49px)] overflow-hidden bg-[#0D0F12] p-2">
+          <Image
+            src={project.image}
+            alt={`${project.title} project screenshot`}
+            fill
+            sizes="(min-width: 1024px) 560px, 92vw"
+            className="object-contain object-top transition duration-700 group-hover:scale-[1.025]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#090B0D]/55 via-transparent to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.22em] text-white/68">{project.preview.eyebrow}</p>
+              <p className="mt-1 text-lg font-black text-white">{project.preview.metric}</p>
             </div>
-          </div>
-
-          <div className="space-y-3">
-            <div className="grid grid-cols-3 gap-2">
-              {cards.map((card, index) => (
-                <div key={card} className="rounded-2xl border border-white/10 bg-white/[0.035] p-2 sm:p-3">
-                  <div className="mb-3 grid h-8 w-8 place-items-center rounded-xl" style={{ backgroundColor: `${project.preview.accent}1A` }}>
-                    {index === 0 ? (
-                      <Users className="h-4 w-4" style={{ color: project.preview.accent }} />
-                    ) : index === 1 ? (
-                      <Clock3 className="h-4 w-4" style={{ color: project.preview.accent }} />
-                    ) : (
-                      <Bot className="h-4 w-4" style={{ color: project.preview.accent }} />
-                    )}
-                  </div>
-                  <p className="truncate text-[11px] font-black text-white">{card}</p>
-                  <div className="mt-2 h-1.5 rounded-full bg-white/10">
-                    <div className="h-full rounded-full" style={{ width: `${58 + index * 14}%`, backgroundColor: project.preview.accent }} />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-[#0A0A0A] p-3 sm:p-4">
-              <div className="mb-4 flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-black text-white">{project.title}</p>
-                  <p className="text-[10px] text-[#697080]">System overview</p>
-                </div>
-                <ShieldCheck className="h-5 w-5" style={{ color: project.preview.accent }} />
-              </div>
-              <div className="grid grid-cols-5 items-end gap-2">
-                {[42, 68, 50, 82, 74].map((height, index) => (
-                  <span
-                    key={height}
-                    className="rounded-t-lg bg-white/10"
-                    style={{
-                      height: `${height}px`,
-                      background: index === 3 ? project.preview.accent : "rgba(255,255,255,0.1)",
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
+            <span
+              className="rounded-full border border-white/10 bg-[#0A0A0A]/80 px-3 py-1.5 text-xs font-black text-white backdrop-blur"
+              style={{ boxShadow: `0 0 28px ${project.preview.accent}24` }}
+            >
+              {project.category}
+            </span>
           </div>
         </div>
       </motion.div>

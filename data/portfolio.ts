@@ -57,6 +57,7 @@ import {
   ShieldCheck,
   Sparkles,
   TestTubeDiagonal,
+  Users,
   Workflow,
 } from "lucide-react";
 
@@ -115,6 +116,7 @@ export type Project = {
   bullets: string[];
   liveUrl?: string;
   sourceLabel?: string;
+  image: string;
   preview: {
     type: "workflow" | "dashboard" | "legacy" | "commerce" | "ai";
     eyebrow: string;
@@ -152,10 +154,12 @@ export const profile = {
   headlineAccent: "Platforms That Scale",
   headlineTail: "& Ship Fast",
   title: "Full-Stack Software Engineer",
-  email: "developer15246@gmail.com",
+  email: "infodevs152@gmail.com",
   phone: "+92 3333735364",
   resumePath: "/muhammad-fayaz-resume.pdf",
   imagePath: "/profile-img.jpg",
+  meetingHref:
+    "mailto:infodevs152@gmail.com?subject=Schedule%20a%20portfolio%20meeting&body=Hi%20Muhammad%2C%0A%0AI%20would%20like%20to%20schedule%20a%20meeting%20to%20discuss%20a%20role%20or%20project.%0A%0ABest%2C",
   summary:
     "Full-Stack Software Engineer with 4+ years of experience building production SaaS platforms, workflow systems, AWS deployments, AI-powered features, and scalable web applications.",
   detailedBio:
@@ -176,9 +180,9 @@ export const navItems: NavItem[] = [
 
 export const stats: Stat[] = [
   { label: "Years Exp.", value: 4, suffix: "+", icon: BriefcaseBusiness },
-  { label: "Live SaaS Apps", value: 3, suffix: "+", icon: Rocket },
-  { label: "Workflow States", value: 6, suffix: "+", icon: Workflow },
-  { label: "Tech Stack", value: 30, suffix: "+", icon: Code2 },
+  { label: "Delivered Projects", value: 10, suffix: "+", icon: Rocket },
+  { label: "Collaborations", value: 15, suffix: "+", icon: Users },
+  { label: "Company SaaS Apps", value: 3, suffix: "+", icon: Workflow },
 ];
 
 export const advantages = [
@@ -420,6 +424,7 @@ export const projects: Project[] = [
     stack: ["MERN", "Next.js", "REST APIs", "AWS ECS", "RBAC", "Audit Logs", "Multi-Tenant SaaS"],
     liveUrl: "https://www.recommendas.com",
     sourceLabel: "Private company repository",
+    image: "/recommendas.png",
     preview: {
       type: "workflow",
       eyebrow: "Recommendation lifecycle",
@@ -440,6 +445,7 @@ export const projects: Project[] = [
     stack: ["MERN", "Next.js", "AWS ECS", "Activity Tracking", "Performance Optimization", "SaaS"],
     liveUrl: "https://www.chronoca.com",
     sourceLabel: "Private company repository",
+    image: "/chronoca.png",
     preview: {
       type: "dashboard",
       eyebrow: "Productivity visibility",
@@ -460,6 +466,7 @@ export const projects: Project[] = [
     stack: ["SaaS", "Next.js", "MERN", "Document Workflows", "User Records", "Cloud Deployment"],
     liveUrl: "https://www.accompliq.com",
     sourceLabel: "Private company repository",
+    image: "/accompliq.png",
     preview: {
       type: "legacy",
       eyebrow: "Digital legacy records",
@@ -478,6 +485,7 @@ export const projects: Project[] = [
     description:
       "A full-stack food delivery platform with double authentication for customers and restaurant holders.",
     stack: ["MERN", "GraphQL", "Redis", "Zustand", "TypeScript", "Zod", "Cloudinary"],
+    image: "/food-panda-clone.png",
     preview: {
       type: "commerce",
       eyebrow: "Restaurant operations",
@@ -496,6 +504,7 @@ export const projects: Project[] = [
     description:
       "An AI SaaS web app offering chatbots, code generation, code review, image tools, AI coach, and AI fun bot workflows.",
     stack: ["Next.js", "TypeScript", "Prisma", "MongoDB", "OpenAI", "Claude", "Gemini"],
+    image: "/ai-saas.jpeg",
     preview: {
       type: "ai",
       eyebrow: "AI workflow suite",

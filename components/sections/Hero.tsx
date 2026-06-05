@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, Download, Star } from "lucide-react";
+import { ArrowDown, ArrowRight, CalendarDays, Star } from "lucide-react";
 import { floatingSkills, profile, stats } from "@/data/portfolio";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { FloatingBadge } from "@/components/ui/FloatingBadge";
@@ -67,12 +67,11 @@ export function Hero() {
 
           <motion.div variants={item} className="flex flex-wrap gap-3 sm:gap-4">
             <a
-              href={profile.resumePath}
-              download
+              href={profile.meetingHref}
               className="group inline-flex items-center gap-2 rounded-xl bg-[#C9F31D] px-5 py-3.5 text-sm font-black text-[#0A0A0A] shadow-[0_16px_44px_rgba(201,243,29,0.25)] transition hover:-translate-y-0.5 hover:bg-[#1DB954] sm:px-8 sm:text-base"
             >
-              Download CV
-              <Download className="h-4 w-4 transition group-hover:translate-y-0.5" />
+              Schedule Meeting
+              <CalendarDays className="h-4 w-4 transition group-hover:scale-110" />
             </a>
             <Link
               href="#contact"
