@@ -118,6 +118,7 @@ export type Project = {
   stack: string[];
   bullets: string[];
   liveUrl?: string;
+  extensionUrl?: string;
   sourceLabel?: string;
   image: string;
   preview: {
@@ -444,9 +445,10 @@ export const projects: Project[] = [
     title: "Chronoca",
     category: "Workforce Productivity",
     description:
-      "A workforce productivity and time-tracking platform inspired by tools like Hubstaff for work sessions, activity tracking, and operational visibility.",
-    stack: ["MERN", "Next.js", "AWS ECS", "Activity Tracking", "Performance Optimization", "SaaS"],
+      "A workforce productivity and time-tracking SaaS platform with work session tracking, activity monitoring, and a published Chrome extension on the Web Store.",
+    stack: ["MERN", "Next.js", "AWS ECS", "Chrome Extension", "Activity Tracking", "Performance Optimization", "SaaS"],
     liveUrl: "https://www.chronoca.com",
+    extensionUrl: "https://chromewebstore.google.com/detail/chronoca/ecbgkadfgdbfjmlghidaamlnefogljfl",
     sourceLabel: "Private company repository",
     image: "/chronoca.png",
     preview: {
@@ -456,9 +458,30 @@ export const projects: Project[] = [
       accent: "#38BDF8",
     },
     bullets: [
+      "Built and published the Chronoca Chrome Extension on the Chrome Web Store for browser-based session tracking and sync.",
       "Contributed to backend architecture, SaaS workflow logic, deployment infrastructure, and system scalability.",
-      "Focused on lightweight optimized tracking behavior without hurting system performance.",
-      "Helped organizations track work sessions, monitor activity, manage productivity, and improve visibility.",
+      "Helped organizations track work sessions, monitor activity, manage productivity, and improve operational visibility.",
+    ],
+  },
+  {
+    title: "Chronoca Chrome Extension",
+    category: "Browser Extension",
+    description:
+      "A Chrome extension for real-time work session tracking and productivity monitoring, published on the Chrome Web Store.",
+    stack: ["React", "TypeScript", "Chrome APIs", "Storage Sync", "Activity Monitoring", "SaaS Integration"],
+    liveUrl: "https://chromewebstore.google.com/detail/chronoca/ecbgkadfgdbfjmlghidaamlnefogljfl",
+    sourceLabel: "Private company repository",
+    image: "/extension.png",
+    preview: {
+      type: "dashboard",
+      eyebrow: "Browser extension",
+      metric: "4.5+ rating",
+      accent: "#38BDF8",
+    },
+    bullets: [
+      "Built and published the Chronoca Chrome Extension on the Chrome Web Store for browser-based session tracking and sync.",
+      "Implemented real-time activity monitoring and work session tracking within the browser.",
+      "Designed seamless integration with the Chronoca SaaS platform for data synchronization.",
     ],
   },
   {

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, ExternalLink, Github, LockKeyhole } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Github, LockKeyhole, Puzzle } from "lucide-react";
 import { architectureHighlights, projects, type Project } from "@/data/portfolio";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -127,7 +127,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-7 flex gap-3">
+<div className="mt-7 flex flex-wrap gap-2">
                   {project.liveUrl ? (
                     <a
                       href={project.liveUrl}
@@ -149,6 +149,17 @@ export function Projects() {
                       Live Link
                     </button>
                   )}
+                  {project.extensionUrl ? (
+                    <a
+                      href={project.extensionUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-xl border border-[#38BDF8]/40 bg-[#38BDF8]/10 px-4 py-2 text-sm font-bold text-[#38BDF8] transition hover:-translate-y-0.5 hover:bg-[#38BDF8]/20"
+                    >
+                      Chrome Extension
+                      <Puzzle className="h-4 w-4" />
+                    </a>
+                  ) : null}
                   <a
                     href="https://github.com/FAIZY152"
                     target="_blank"
