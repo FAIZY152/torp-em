@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
   try {
@@ -12,32 +11,31 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || "587"),
-      secure: process.env.SMTP_SECURE === "true",
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+    const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-key": process.env.BREVO_API_KEY || "",
       },
+      body: JSON.stringify({
+        sender: {
+          name: process.env.BREVO_SENDER_NAME || "Portfolio",
+          email: process.env.BREVO_SENDER_EMAIL || "noreply@example.com",
+        },
+        to: [{ email: process.env.CONTACT_EMAIL || "infodevs152@gmail.com", name: "Muhammad Fayaz" }],
+        replyTo: { email: email, name: name },
+        subject: `Portfolio Contact Form: ${name}`,
+        htmlContent: `
+          <p><strong>From:</strong> ${name} &lt;${email}&gt;</p>
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, "<br>")}</p>
+        `,
+      }),
     });
 
-    await transporter.sendMail({
-      from: `"${name}" <${email}>`,
-      to: process.env.CONTACT_EMAIL || "infodevs152@gmail.com",
-      subject: `Portfolio Contact Form: ${name}`,
-      text: `
-From: ${name} <${email}>
-
-Message:
-${message}
-      `,
-      html: `
-        <p><strong>From:</strong> ${name} &lt;${email}&gt;</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
-      `,
-    });
+    if (!response.ok) {
+      throw new Error("Failed to send email");
+    }
 
     return NextResponse.json(
       { success: true, message: "Message sent successfully!" },

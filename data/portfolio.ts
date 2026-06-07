@@ -448,7 +448,6 @@ export const projects: Project[] = [
       "A workforce productivity and time-tracking SaaS platform with work session tracking, activity monitoring, and a published Chrome extension on the Web Store.",
     stack: ["MERN", "Next.js", "AWS ECS", "Chrome Extension", "Activity Tracking", "Performance Optimization", "SaaS"],
     liveUrl: "https://www.chronoca.com",
-    extensionUrl: "https://chromewebstore.google.com/detail/chronoca/ecbgkadfgdbfjmlghidaamlnefogljfl",
     sourceLabel: "Private company repository",
     image: "/chronoca.png",
     preview: {
