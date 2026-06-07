@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     icon: "/profile-img.jpg",
   },
 };
-  
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body className={`${syne.variable} ${dmSans.variable} ${jetBrainsMono.variable}`}>
+        <Toaster />
         {children}
       </body>
     </html>
