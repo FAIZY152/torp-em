@@ -11,11 +11,12 @@ type StatCounterProps = {
 export function StatCounter({ value, suffix = "" }: StatCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
 
   useEffect(() => {
     if (!inView) return;
 
+    setCount(0);
     let frame = 0;
     const totalFrames = 42;
     const interval = window.setInterval(() => {

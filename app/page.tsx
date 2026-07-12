@@ -1,6 +1,5 @@
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { SmoothScroll } from "@/components/SmoothScroll";
 import { About } from "@/components/sections/About";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
@@ -16,7 +15,6 @@ import { Pricing } from "@/components/sections/Pricing";
 export default function Page() {
   return (
     <>
-      <SmoothScroll />
       <Navbar />
       <main className="font-sans">
         <Hero />

@@ -16,7 +16,7 @@ function SkillTile({ skill }: SkillTileProps) {
       <div className="skill-tile-icon">
         {Icon ? <Icon className="h-8 w-8" /> : <span className="font-display text-base font-black">{skill.short ?? skill.name.slice(0, 2)}</span>}
       </div>
-      <span className="mt-3 block max-w-[8rem] truncate text-center text-sm font-bold text-[#8F98A8] transition group-hover:text-[#F5F5F5]">
+      <span className="mt-3 block max-w-[8rem] truncate text-center text-sm font-bold text-muted-foreground transition group-hover:text-foreground">
         {skill.name}
       </span>
     </div>
@@ -50,29 +50,29 @@ function MarqueeRow({
 
 export function Skills() {
   return (
-    <section id="skills" className="relative overflow-hidden bg-[#0A0A0A] py-16 md:py-24">
+    <section id="skills" className="relative overflow-hidden bg-background py-16 md:py-24">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(201,243,29,0.24)] to-transparent" />
-      <div className="absolute left-1/2 top-28 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-[rgba(201,243,29,0.05)] blur-3xl" />
+      <div className="absolute left-1/2 top-28 h-80 w-[42rem] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-[1920px]">
         <motion.div
-          initial={{ opacity: 0, y: 28 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.35 }}
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="mx-auto mb-14 max-w-4xl px-4 text-center sm:px-6"
         >
-          <h2 className="font-display text-4xl font-black leading-tight text-[#F5F5F5] md:text-5xl">
+          <h2 className="font-display text-4xl font-black leading-tight text-foreground md:text-5xl">
             Built With <span className="text-gradient">Modern Tools</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#A0A0A0] md:text-lg">
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-muted-foreground md:text-lg">
             A complete production stack across frontend, backend, databases, cloud, DevOps, AI integration, testing, and tooling.
           </p>
         </motion.div>
 
         <div className="relative py-2">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-[#0A0A0A] to-transparent md:w-48" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-[#0A0A0A] to-transparent md:w-48" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-background to-transparent md:w-48" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-background to-transparent md:w-48" />
 
           <div className="space-y-5">
             {skillMarqueeRows.map((row, index) => (

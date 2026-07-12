@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Premium portfolio for Muhammad Fayaz, a Full-Stack Software Engineer specializing in SaaS, AI integration, cloud deployment, and production-grade web applications.",
   icons: {
-    icon: "/profile-img.jpg",
+    icon: "/favicon.jpeg",
   },
 };
 
@@ -36,10 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${syne.variable} ${dmSans.variable} ${jetBrainsMono.variable}`}>
-        <Toaster />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+          <Toaster />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

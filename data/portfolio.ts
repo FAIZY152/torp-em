@@ -122,7 +122,7 @@ export type Project = {
   sourceLabel?: string;
   image: string;
   preview: {
-    type: "workflow" | "dashboard" | "legacy" | "commerce" | "ai";
+    type: "workflow" | "dashboard" | "legacy" | "operations" | "commerce" | "ai";
     eyebrow: string;
     metric: string;
     accent: string;
@@ -160,14 +160,14 @@ export const profile = {
   title: "Full-Stack Software Engineer",
   email: "infodevs152@gmail.com",
   phone: "+92 3333735364",
-  resumePath: "/muhammad-fayaz-resume.pdf",
+  resumePath: "/m-resume.pdf",
   imagePath: "/profile-img.jpg",
   meetingHref:
     "mailto:infodevs152@gmail.com?subject=Schedule%20a%20portfolio%20meeting&body=Hi%20Muhammad%2C%0A%0AI%20would%20like%20to%20schedule%20a%20meeting%20to%20discuss%20a%20role%20or%20project.%0A%0ABest%2C",
   summary:
-    "Full-Stack Software Engineer with 4+ years of experience building production SaaS platforms, workflow systems, AWS deployments, AI-powered features, and scalable web applications.",
+    "Full Stack Software Engineer with 4+ years of experience building scalable SaaS platforms using Next.js, NestJS, TypeScript, PostgreSQL, AWS, Docker, and AI APIs.",
   detailedBio:
-    "I build scalable SaaS platforms, workflow systems, AI-powered applications, and cloud-based products used in real company environments. My experience includes multi-tenant architecture, lifecycle/state engines, immutable/versioned submissions, audit systems, role and permission models, REST APIs, AWS ECS deployments, shared infrastructure, and production optimization.",
+    "I build production-ready SaaS platforms, microservices, cloud deployments, payment-ready workflows, authentication systems, AI-powered features, and enterprise applications. My experience includes multi-tenant architecture, workflow engines, audit systems, RBAC, REST and GraphQL APIs, AWS ECS Fargate, Docker, Redis, RabbitMQ, PostgreSQL, Prisma, and long-term production maintenance.",
 };
 
 export const navItems: NavItem[] = [
@@ -232,16 +232,16 @@ export const services: Service[] = [
   {
     title: "Full-Stack SaaS Development",
     description:
-      "Production-grade apps with Next.js, MERN, Laravel, dashboards, workflows, authentication, APIs, and scalable data models.",
+      "Production-ready SaaS apps with Next.js, NestJS, MERN, Laravel, dashboards, workflows, authentication, APIs, and scalable data models.",
     icon: Code2,
-    tags: ["Next.js", "MERN", "Laravel", "SaaS"],
+    tags: ["Next.js", "NestJS", "MERN", "Laravel", "SaaS"],
   },
   {
     title: "AI-Powered Web Apps",
     description:
-      "OpenAI-powered features, chatbots, code generation, recommendation engines, content refinement, and automation workflows.",
+      "OpenAI and Gemini-powered features, chatbots, code generation, recommendation engines, content refinement, and automation workflows.",
     icon: Bot,
-    tags: ["OpenAI", "LangChain", "Chatbots", "Automation"],
+    tags: ["OpenAI", "Gemini", "LangChain", "Chatbots", "Automation"],
   },
   {
     title: "Microservices Architecture",
@@ -256,6 +256,13 @@ export const services: Service[] = [
       "AWS ECS shared clusters, VPCs, load balancers, target groups, security groups, container deployments, CI/CD, and production optimization.",
     icon: Cloud,
     tags: ["AWS", "Docker", "CI/CD", "GitHub Actions"],
+  },
+  {
+    title: "Operations Platforms",
+    description:
+      "Internal business systems for travel agencies, certificate workflows, customer onboarding, document processing, search, and secure records.",
+    icon: Workflow,
+    tags: ["Workflows", "Documents", "Search", "RBAC"],
   },
 ];
 
@@ -389,32 +396,31 @@ export const skillMarqueeRows: SkillMarqueeItem[][] = [
 export const experiences: Experience[] = [
   {
     company: "Thinkasa | ASA Global",
-    role: "MERN Stack Developer / Full-Stack SaaS Engineer",
+    role: "Associate Software Architect / Full-Stack SaaS Engineer",
     location: "Remote",
-    range: "Nov 2023 - Working",
+    range: "Nov 2023 - Present",
     linkLabel: "U.S.-based SaaS company",
-    highlights: ["Recommendas", "Chronoca", "Accompliq", "AWS ECS", "Multi-tenant SaaS"],
+    highlights: ["4 production SaaS platforms", "2 enterprise products", "AWS ECS", "Multi-tenant SaaS", "AI integrations"],
     bullets: [
-      "Contributed heavily to Recommendas and Chronoca across backend architecture, SaaS workflow logic, deployment infrastructure, and scalability.",
-      "Designed Recommendas around neutral multi-tenant entities such as Organization, Professional, Recommender, and Recommendation Record so the platform can support multiple industries without hardcoded workflow assumptions.",
-      "Implemented a versioned submission model where submitted records stay immutable, updates create new submissions, previous versions remain preserved, and the latest active submission is tracked separately for auditability.",
-      "Built controlled lifecycle transitions including Draft, Sent, In Progress, Submitted, Recorded, and Unlocked so actions, permissions, notifications, and audit events remain predictable.",
-      "Designed a shared AWS ECS deployment architecture using a shared VPC, single ECS cluster, shared load balancer, separate ECS services/tasks, target groups, and security groups for cost-efficient isolated deployments.",
-      "Worked on authentication, authorization, REST APIs, database modeling, role and permission systems, audit/lifecycle systems, performance optimization, and production deployment.",
+      "Promoted from Mid Level Full Stack Engineer to Associate Software Architect, expanding into solution architecture, cloud infrastructure, and technical leadership across multiple SaaS products.",
+      "Delivered 4 production SaaS platforms and collaborated on 2 additional enterprise products, owning architecture, development, deployment, optimization, and long-term maintenance.",
+      "Designed a cost-optimized AWS ECS Fargate deployment platform hosting 5 production SaaS applications through a shared VPC, ALB, ECS cluster, isolated ECS services, target groups, security groups, and Amazon RDS.",
+      "Built scalable multi-tenant platforms using Next.js, NestJS, MERN, PostgreSQL, REST APIs, GraphQL, RBAC, AI integrations, and secure workflow-driven architecture.",
+      "Partnered with DevOps engineers to automate deployments, optimize performance, and establish reusable deployment standards across production environments.",
     ],
   },
   {
     company: "SH",
     role: "Junior MERN Stack Developer",
     location: "Onsite",
-    range: "June 2022 - July 2023",
+    range: "Mar 2022 - Jul 2023",
     linkLabel: "Link listed in resume",
     bullets: [
-      "Joined a UK institute and software house as a junior developer and contributed to real-world monolithic and microservices systems.",
-      "Built and deployed full-stack MERN applications including a SaaS platform, food ordering platform, HMS, and LMS with Laravel.",
-      "Integrated GraphQL, OpenAI APIs, Redis, Kafka, RabbitMQ, WebSockets, and React/Next.js frontends.",
-      "Dockerized microservices and wrote unit and integration test cases for critical features.",
-      "Built a microservices system with Auth, Catalog, Order, Notification, and supporting services, including JWT auth, RBAC, and token refresh.",
+      "Developed and maintained production-grade monolithic and microservices-based web applications using the MERN Stack, GraphQL, and Laravel.",
+      "Designed core microservices including Authentication, Catalog, Order, and Notification with JWT authentication, RBAC, Redis caching, RabbitMQ messaging, and WebSockets.",
+      "Built scalable REST and GraphQL APIs and integrated them with React.js and Next.js frontends for high-performance real-time user experiences.",
+      "Containerized applications with Docker and wrote unit and integration tests to improve reliability and maintainability.",
+      "Contributed to multiple applications including Food Ordering and Hospital Management systems in an Agile development environment.",
     ],
   },
 ];
@@ -505,6 +511,26 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Balady Services Platform",
+    category: "Travel Agency Operations",
+    description:
+      "A web-based travel agency management platform for customers, Saudi Balady health certificate applications, company records, and secure document workflows.",
+    stack: ["Next.js", "NestJS", "Operations", "Document Workflows", "Advanced Search", "Secure Records", "RBAC"],
+    sourceLabel: "Private company repository",
+    image: "/travel.png",
+    preview: {
+      type: "operations",
+      eyebrow: "Balady service workflows",
+      metric: "Certificate operations",
+      accent: "#159A6A",
+    },
+    bullets: [
+      "Managed customer onboarding, company records, Saudi Balady health certificate applications, and agency document workflows.",
+      "Integrated Balady Services flows for health certificate verification, application tracking, advanced search, and secure records.",
+      "Improved day-to-day agency operations with centralized data, structured document handling, and faster service follow-up.",
+    ],
+  },
+  {
     title: "Food Panda App",
     category: "MERN Platform",
     description:
@@ -523,25 +549,7 @@ export const projects: Project[] = [
       "Enabled real-time order updates and optimized media delivery through Cloudinary.",
     ],
   },
-  {
-    title: "AI SaaS App",
-    category: "AI Product",
-    description:
-      "An AI SaaS web app offering chatbots, code generation, code review, image tools, AI coach, and AI fun bot workflows.",
-    stack: ["Next.js", "TypeScript", "Prisma", "MongoDB", "OpenAI", "Claude", "Gemini"],
-    image: "/ai-saas.jpeg",
-    preview: {
-      type: "ai",
-      eyebrow: "AI workflow suite",
-      metric: "Multi-model tools",
-      accent: "#22C55E",
-    },
-    bullets: [
-      "Built a high-performance Next.js frontend with scalable architecture.",
-      "Integrated Prisma ORM with MongoDB for secure data modeling and querying.",
-      "Connected multiple AI APIs and optimized assistant, analyzer, image generation, and background removal tools.",
-    ],
-  },
+
 ];
 
 export const testimonials: Testimonial[] = [
@@ -669,9 +677,9 @@ export const architectureHighlights = [
     icon: History,
   },
   {
-    title: "Shared AWS ECS architecture",
+    title: "AWS ECS Fargate platform",
     description:
-      "Reduced cost and simplified scaling with shared VPC, ECS cluster, application load balancer, service isolation, target groups, and security groups.",
+      "Hosted 5 production SaaS applications through shared VPC, ECS cluster, Fargate services, load balancer, target groups, security groups, and RDS.",
     icon: Cloud,
   },
   {
