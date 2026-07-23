@@ -23,7 +23,7 @@ const nextConfig = {
         headers: [
           {
             key: "X-Robots-Tag",
-            value: "index, follow, noarchive, nosnippet, max-snippet:0, max-image-preview:none",
+            value: "noindex, nofollow, noarchive, nosnippet, max-snippet:0, max-image-preview:none",
           },
         ],
       },
