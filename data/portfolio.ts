@@ -398,7 +398,7 @@ export const experiences: Experience[] = [
     company: "ASA Global Digital",
     role: "Associate Software Architect / Full-Stack SaaS Engineer",
     location: "Remote",
-    range: "Nov 2024 - Present",
+    range: "Aug 2025 - Present",
     linkLabel: "U.S.-based SaaS company",
     highlights: ["4 production SaaS platforms", "2 enterprise products", "AWS ECS", "Multi-tenant SaaS", "AI integrations"],
     bullets: [
@@ -410,10 +410,10 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    company: "SH",
+    company: "UK Institute Of Computer Science",
     role: "Junior MERN Stack Developer",
     location: "Onsite",
-    range: "Mar 2022 - Jul 2024",
+    range: "Mar 2022 - June 2025",
     linkLabel: "Link listed in resume",
     bullets: [
       "Developed and maintained production-grade monolithic and microservices-based web applications using the MERN Stack, GraphQL, and Laravel.",
