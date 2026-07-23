@@ -16,6 +16,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async headers() {
+    return [
+      {
+        source: "/",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "index, follow, noarchive, nosnippet, max-snippet:0, max-image-preview:none",
+          },
+        ],
+      },
+    ]
+  },
 }
 
 mergeConfig(nextConfig, userConfig)

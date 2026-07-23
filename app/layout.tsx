@@ -26,6 +26,19 @@ export const metadata: Metadata = {
   title: "Muhammad Fayaz | Full-Stack Software Engineer",
   description:
     "Premium portfolio for Muhammad Fayaz, a Full-Stack Software Engineer specializing in SaaS, AI integration, cloud deployment, and production-grade web applications.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      nocache: true,
+      "max-snippet": 0,
+      "max-image-preview": "none",
+      "max-video-preview": 0,
+    },
+  },
   icons: {
     icon: "/favicon.jpeg",
   },
