@@ -160,7 +160,7 @@ export const profile = {
   title: "Full-Stack Software Engineer",
   email: "infodevs152@gmail.com",
   phone: "+92 3333735364",
-  resumePath: "/m-resume.pdf",
+  resumePath: undefined,
   imagePath: "/profile-img.jpg",
   meetingHref:
     "mailto:infodevs152@gmail.com?subject=Schedule%20a%20portfolio%20meeting&body=Hi%20Muhammad%2C%0A%0AI%20would%20like%20to%20schedule%20a%20meeting%20to%20discuss%20a%20role%20or%20project.%0A%0ABest%2C",
@@ -193,7 +193,7 @@ export const advantages = [
   {
     title: "Production SaaS Delivery",
     description:
-      "Built and deployed live SaaS products including Recommendas, Chronoca, and Accompliq for real company environments.",
+      "Built and deployed live SaaS products for real company environments across workflow, productivity, and operations domains.",
     icon: Rocket,
   },
   {
@@ -398,7 +398,7 @@ export const experiences: Experience[] = [
     company: "ASA Global Digital",
     role: "Associate Software Architect / Full-Stack SaaS Engineer",
     location: "Remote",
-    range: "Nov 2023 - Present",
+    range: "Nov 2024 - Present",
     linkLabel: "U.S.-based SaaS company",
     highlights: ["4 production SaaS platforms", "2 enterprise products", "AWS ECS", "Multi-tenant SaaS", "AI integrations"],
     bullets: [
@@ -413,7 +413,7 @@ export const experiences: Experience[] = [
     company: "SH",
     role: "Junior MERN Stack Developer",
     location: "Onsite",
-    range: "Mar 2022 - Jul 2023",
+    range: "Mar 2022 - Jul 2024",
     linkLabel: "Link listed in resume",
     bullets: [
       "Developed and maintained production-grade monolithic and microservices-based web applications using the MERN Stack, GraphQL, and Laravel.",
@@ -426,90 +426,6 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-  // {
-  //   title: "Recommendas",
-  //   category: "Production SaaS",
-  //   description:
-  //     "A workflow-driven SaaS platform for managing professional recommendations, reference workflows, secure records, and organization-level tracking.",
-  //   stack: ["MERN", "Next.js", "REST APIs", "AWS ECS", "RBAC", "Audit Logs", "Multi-Tenant SaaS"],
-  //   liveUrl: "https://www.recommendas.com",
-  //   sourceLabel: "Private company repository",
-  //   image: "/recommendas.png",
-  //   preview: {
-  //     type: "workflow",
-  //     eyebrow: "Recommendation lifecycle",
-  //     metric: "6-state workflow",
-  //     accent: "#C9F31D",
-  //   },
-  //   bullets: [
-  //     "Designed neutral workflow entities so the product can support hiring, staffing, education, agencies, and professional services.",
-  //     "Implemented immutable/versioned submissions to preserve record integrity and improve auditability.",
-  //     "Built lifecycle controls, permissions, audit tracking, secure recommendation handling, and structured workflow management.",
-  //   ],
-  // },
-  // {
-  //   title: "Chronoca",
-  //   category: "Workforce Productivity",
-  //   description:
-  //     "A workforce productivity and time-tracking SaaS platform with work session tracking, activity monitoring, and a published Chrome extension on the Web Store.",
-  //   stack: ["MERN", "Next.js", "AWS ECS", "Chrome Extension", "Activity Tracking", "Performance Optimization", "SaaS"],
-  //   liveUrl: "https://www.chronoca.com",
-  //   sourceLabel: "Private company repository",
-  //   image: "/chronoca.png",
-  //   preview: {
-  //     type: "dashboard",
-  //     eyebrow: "Productivity visibility",
-  //     metric: "Work session tracking",
-  //     accent: "#38BDF8",
-  //   },
-  //   bullets: [
-  //     "Built and published the Chronoca Chrome Extension on the Chrome Web Store for browser-based session tracking and sync.",
-  //     "Contributed to backend architecture, SaaS workflow logic, deployment infrastructure, and system scalability.",
-  //     "Helped organizations track work sessions, monitor activity, manage productivity, and improve operational visibility.",
-  //   ],
-  // },
-  // {
-  //   title: "Chronoca Chrome Extension",
-  //   category: "Browser Extension",
-  //   description:
-  //     "A Chrome extension for real-time work session tracking and productivity monitoring, published on the Chrome Web Store.",
-  //   stack: ["React", "TypeScript", "Chrome APIs", "Storage Sync", "Activity Monitoring", "SaaS Integration"],
-  //   liveUrl: "https://chromewebstore.google.com/detail/chronoca/ecbgkadfgdbfjmlghidaamlnefogljfl",
-  //   sourceLabel: "Private company repository",
-  //   image: "/extension.png",
-  //   preview: {
-  //     type: "dashboard",
-  //     eyebrow: "Browser extension",
-  //     metric: "4.5+ rating",
-  //     accent: "#38BDF8",
-  //   },
-  //   bullets: [
-  //     "Built and published the Chronoca Chrome Extension on the Chrome Web Store for browser-based session tracking and sync.",
-  //     "Implemented real-time activity monitoring and work session tracking within the browser.",
-  //     "Designed seamless integration with the Chronoca SaaS platform for data synchronization.",
-  //   ],
-  // },
-  // {
-  //   title: "Accompliq",
-  //   category: "Personal Organization",
-  //   description:
-  //     "A platform for personal organization, storytelling, digital legacy management, goals, documents, milestones, and long-term life records.",
-  //   stack: ["SaaS", "Next.js", "MERN", "Document Workflows", "User Records", "Cloud Deployment"],
-  //   liveUrl: "https://www.accompliq.com",
-  //   sourceLabel: "Private company repository",
-  //   image: "/accompliq.png",
-  //   preview: {
-  //     type: "legacy",
-  //     eyebrow: "Digital legacy records",
-  //     metric: "Goals + documents",
-  //     accent: "#A78BFA",
-  //   },
-  //   bullets: [
-  //     "Supported a product direction combining productivity, personal records, and digital legacy management.",
-  //     "Built around organizing goals, bucket lists, documents, milestones, experiences, and personal stories.",
-  //     "Contributed to the production SaaS ecosystem deployed and maintained in a real company environment.",
-  //   ],
-  // },
   {
     title: "Balady Services Platform",
     category: "Travel Agency Operations",
@@ -562,36 +478,6 @@ export const testimonials: Testimonial[] = [
       "Contributed heavily to production SaaS architecture, backend workflow logic, deployment infrastructure, scalability, role permissions, audit systems, and real company product releases.",
     source: "Experience summary",
     accent: "#C9F31D",
-  // },
-  // {
-  //   name: "Recommendas",
-  //   role: "Workflow SaaS",
-  //   project: "Recommendation records",
-  //   year: "Live",
-  //   quote:
-  //     "Built a flexible multi-tenant workflow model with immutable versioned submissions, lifecycle states, audit tracking, and secure recommendation handling.",
-  //   source: "Project case study",
-  //   accent: "#38BDF8",
-  // },
-  // {
-  //   name: "Chronoca",
-  //   role: "Workforce productivity",
-  //   project: "Time tracking platform",
-  //   year: "Live",
-  //   quote:
-  //     "Helped organizations track work sessions, monitor activity, manage productivity, and improve operational visibility with lightweight optimized tracking behavior.",
-  //   source: "Project case study",
-  //   accent: "#22C55E",
-  // },
-  // {
-  //   name: "SH Software House",
-  //   role: "Junior MERN Developer",
-  //   project: "SaaS, HMS, LMS, food platform",
-  //   year: "2022 - 2023",
-  //   quote:
-  //     "Delivered real-world MERN and Laravel systems, integrated GraphQL, OpenAI APIs, Redis, queues, WebSockets, Dockerized services, and testing coverage.",
-  //   source: "Resume experience",
-  //   accent: "#F97316",
   },
 ];
 
