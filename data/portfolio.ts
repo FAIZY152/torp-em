@@ -165,7 +165,7 @@ export const profile = {
   meetingHref:
     "mailto:infodevs152@gmail.com?subject=Schedule%20a%20portfolio%20meeting&body=Hi%20Muhammad%2C%0A%0AI%20would%20like%20to%20schedule%20a%20meeting%20to%20discuss%20a%20role%20or%20project.%0A%0ABest%2C",
   summary:
-    "Full Stack Software Engineer with 4+ years of experience building scalable SaaS platforms using Next.js, NestJS, TypeScript, PostgreSQL, AWS, Docker, and AI APIs.",
+    "Full Stack Software Engineer with 3+ years of experience building scalable SaaS platforms using Next.js, NestJS, TypeScript, PostgreSQL, AWS, Docker, and AI APIs.",
   detailedBio:
     "I build production-ready SaaS platforms, microservices, cloud deployments, payment-ready workflows, authentication systems, AI-powered features, and enterprise applications. My experience includes multi-tenant architecture, workflow engines, audit systems, RBAC, REST and GraphQL APIs, AWS ECS Fargate, Docker, Redis, RabbitMQ, PostgreSQL, Prisma, and long-term production maintenance.",
 };
@@ -183,7 +183,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const stats: Stat[] = [
-  { label: "Years Exp.", value: 4, suffix: "+", icon: BriefcaseBusiness },
+  { label: "Years Exp.", value: 3, suffix: "+", icon: BriefcaseBusiness },
   { label: "Delivered Projects", value: 10, suffix: "+", icon: Rocket },
   { label: "Collaborations", value: 15, suffix: "+", icon: Users },
   { label: "Company SaaS Apps", value: 5, suffix: "+", icon: Workflow },
